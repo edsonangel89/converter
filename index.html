@@ -24,12 +24,16 @@
             background-color: #D9D9D9;
             font-size: 35px;
         }
-        .unit_sel_temp {
+        #main_menu {
             display: none;
         }
+        #unit_sel_temp {
+            display: none;
+        }
+        
     </style>
 </head>
-<body>
+<body onload="greeting()">
     <div id="main_menu">
         <button onclick="selTemp()">Temperatura</button>
         <button onclick="">Presión</button>
@@ -40,6 +44,11 @@
         <button onclick="temp(1)">Celsius</button>
         <button onclick="temp(2)">Fahrenheit</button>
         <button onclick="temp(3)">Kelvins</button>
+    </div>
+    <div id="result">
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
     </div>
     <script src="./main.js"></script>
 </body>
